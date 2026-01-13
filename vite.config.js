@@ -7,5 +7,5 @@ export default defineConfig({
   // GitHub Pages için base path
   // Repository adınızı buraya yazın (örn: '/miterra-web/')
   // Eğer custom domain kullanıyorsanız veya root domain'de yayınlayacaksanız '/' bırakın
-  base: process.env.NODE_ENV === 'production' ? '/miterra/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/miterra-web/' : '/',
 })
