@@ -86,22 +86,8 @@ function Navbar() {
                     ))}
                 </div>
 
-                {/* Right side: Dark mode toggle & CTA */}
+                {/* Right side: CTA */}
                 <div className="flex items-center space-x-4">
-                    {/* Dark Mode Toggle Button */}
-                    <button
-                        onClick={toggleDarkMode}
-                        className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5"
-                        aria-label="Toggle dark mode"
-                    >
-                        <span className={`material-icons text-xl ${isDark ? 'hidden' : ''}`}>
-                            dark_mode
-                        </span>
-                        <span className={`material-icons text-xl ${isDark ? '' : 'hidden'}`}>
-                            light_mode
-                        </span>
-                    </button>
-
                     {/* Visit Us CTA Button */}
                     <a
                         href="#contact"

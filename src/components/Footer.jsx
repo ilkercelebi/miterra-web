@@ -20,7 +20,7 @@ function Footer() {
                 {/* Copyright and Legal Links */}
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-[#896f61]">
                     {/* Copyright */}
-                    <p>© {currentYear} Miterra Artisan Coffee. Tüm Hakları Saklıdır.</p>
+                    <p>© {currentYear} Miterra Coffee. Tüm Hakları Saklıdır. Made by ICDigital</p>
 
                     {/* Legal Links */}
                     <div className="flex flex-wrap justify-center gap-6">
