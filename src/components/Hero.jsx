@@ -51,7 +51,7 @@ function Hero() {
                         onClick={(e) => handleScrollClick(e, '#gallery')}
                         className="bg-primary text-white px-8 py-4 rounded-full text-lg font-medium hover:scale-105 transition-transform"
                     >
-                        Menüyü Keşfet
+                        Bizi Keşfedin
                     </a>
 
                     {/* Secondary CTA - Our Story */}

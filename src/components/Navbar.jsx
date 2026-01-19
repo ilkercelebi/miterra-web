@@ -8,7 +8,7 @@
  * - Mobile responsive hamburger menu
  */
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // Logo image URL from the original design
 const LOGO_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAIR__PWRq9Nw7V5-tIvh026UvS1e-RCpopTsfD5pU_Ijoa2yDOj-hovX2zDkLFPSFyvWLngX-TCBFCcrSC7d395EoYYZRnxTMFO4CPQAmftt-B8CrvG12kCBvSdSzlGKhxPht-f9q0dSE8Jjvzatu6WyZVqHSH8h7k7GDVN1HiPghb16igh5bGLsdk5okUUDYcyb1U9ruGZjIo1yKWRTVhd6igYi-PrOzisz4unAhzMyub6yNoV_0Jv8P_eqQUp8jWZqp1wxfrw93g';
@@ -22,33 +22,8 @@ const NAV_LINKS = [
 ];
 
 function Navbar() {
-    // State for dark mode toggle
-    const [isDark, setIsDark] = useState(false);
     // State for mobile menu toggle
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    // Initialize dark mode from localStorage or system preference
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            setIsDark(true);
-            document.documentElement.classList.add('dark');
-        }
-    }, []);
-
-    // Toggle dark mode and persist preference
-    const toggleDarkMode = () => {
-        setIsDark(!isDark);
-        if (isDark) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        }
-    };
 
     // Smooth scroll to section
     const handleNavClick = (e, href) => {
@@ -86,21 +61,8 @@ function Navbar() {
                     ))}
                 </div>
 
-                {/* Right side: Dark mode toggle & CTA */}
+                {/* Right side: CTA */}
                 <div className="flex items-center space-x-4">
-                    {/* Dark Mode Toggle Button */}
-                    <button
-                        onClick={toggleDarkMode}
-                        className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5"
-                        aria-label="Toggle dark mode"
-                    >
-                        <span className={`material-icons text-xl ${isDark ? 'hidden' : ''}`}>
-                            dark_mode
-                        </span>
-                        <span className={`material-icons text-xl ${isDark ? '' : 'hidden'}`}>
-                            light_mode
-                        </span>
-                    </button>
 
                     {/* Visit Us CTA Button */}
                     <a

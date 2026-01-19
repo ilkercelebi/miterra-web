@@ -140,8 +140,8 @@ function Contact() {
                                             E-posta
                                         </h3>
                                         <p className="text-lg">
-                                            <a href="mailto:hello@miterra.cafe" className="hover:text-primary transition-colors">
-                                                hello@miterra.cafe
+                                            <a href="mailto:info@miterracoffee.com" className="hover:text-primary transition-colors">
+                                                info@miterracoffee.com
                                             </a>
                                         </p>
                                     </div>
@@ -171,7 +171,7 @@ function Contact() {
                                 {/* Social Icons */}
                                 <div className="flex items-center gap-4">
                                     <a
-                                        href="https://instagram.com/miterra.cafe"
+                                        href="https://instagram.com/miterracoffee"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2D1B14] text-white hover:bg-primary transition-all"
@@ -180,7 +180,7 @@ function Contact() {
                                         <InstagramIcon />
                                     </a>
                                     <a
-                                        href="https://facebook.com/miterra.cafe"
+                                        href="https://facebook.com/miterracoffee"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2D1B14] text-white hover:bg-primary transition-all"
@@ -188,7 +188,7 @@ function Contact() {
                                     >
                                         <FacebookIcon />
                                     </a>
-                                    <p className="text-sm font-semibold ml-2">@miterra.cafe</p>
+                                    <p className="text-sm font-semibold ml-2">@miterracoffee</p>
                                 </div>
 
                                 {/* App Store Badges */}
