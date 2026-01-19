@@ -1,0 +1,11 @@
+# Miterra Coffee - robots.txt
+# https://www.miterracoffee.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.miterracoffee.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
