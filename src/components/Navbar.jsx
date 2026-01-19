@@ -10,9 +10,6 @@
 
 import { useState } from 'react';
 
-// Logo image URL from the original design
-const LOGO_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAIR__PWRq9Nw7V5-tIvh026UvS1e-RCpopTsfD5pU_Ijoa2yDOj-hovX2zDkLFPSFyvWLngX-TCBFCcrSC7d395EoYYZRnxTMFO4CPQAmftt-B8CrvG12kCBvSdSzlGKhxPht-f9q0dSE8Jjvzatu6WyZVqHSH8h7k7GDVN1HiPghb16igh5bGLsdk5okUUDYcyb1U9ruGZjIo1yKWRTVhd6igYi-PrOzisz4unAhzMyub6yNoV_0Jv8P_eqQUp8jWZqp1wxfrw93g';
-
 // Navigation links for smooth scrolling
 const NAV_LINKS = [
     { href: '#home', label: 'Ana Sayfa' },
@@ -38,14 +35,18 @@ function Navbar() {
     return (
         <nav className="fixed w-full z-50 glass-nav border-b border-primary/10 dark:border-white/10">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                {/* Logo */}
-                <div className="flex items-center space-x-2">
+                {/* Logo - Clickable to scroll to top */}
+                <a
+                    href="#home"
+                    onClick={(e) => handleNavClick(e, '#home')}
+                    className="flex items-center space-x-2 cursor-pointer"
+                >
                     <img
-                        src={LOGO_URL}
-                        alt="Miterra Logo"
-                        className="h-10 w-auto"
+                        src="/cream_logo.svg"
+                        alt="Miterra Coffee Logo"
+                        className="h-20 w-auto"
                     />
-                </div>
+                </a>
 
                 {/* Desktop Navigation Links */}
                 <div className="hidden md:flex space-x-8 font-medium">
