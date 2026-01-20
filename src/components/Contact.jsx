@@ -113,22 +113,7 @@ function Contact() {
                                     </div>
                                 </div>
 
-                                {/* Phone */}
-                                <div className="flex items-start gap-4 group">
-                                    <div className="bg-primary/10 dark:bg-primary/20 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined">call</span>
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-sm uppercase tracking-wider text-[#896f61] dark:text-[#a68e82]">
-                                            Telefon
-                                        </h3>
-                                        <p className="text-lg">
-                                            <a href="tel:+31201234567" className="hover:text-primary transition-colors">
-                                                +31 (20) 123-4567
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
+
 
                                 {/* Email */}
                                 <div className="flex items-start gap-4 group">
