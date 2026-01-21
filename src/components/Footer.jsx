@@ -6,9 +6,8 @@
 
 // Legal links
 const LEGAL_LINKS = [
-    { href: '/privacy', label: 'Gizlilik Politikası' },
-    { href: '/terms', label: 'Kullanım Şartları' },
-    { href: '/cookies', label: 'Çerez Tercihleri' },
+    { href: '/kvkk.html', label: 'Gizlilik Politikası' },
+    { href: '/terms.html', label: 'Kullanım Şartları' },
 ];
 
 function Footer() {
